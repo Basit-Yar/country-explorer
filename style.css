@@ -1,0 +1,23 @@
+:root {
+  /* Color Palette */
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --text-color: #333;
+  --background-color: #f4f4f4;
+
+  /* Typography */
+  --font-small: 0.8rem;
+  --font-normal: 1rem;
+  --font-large: 1.2rem;
+
+  /* Spacing */
+  --spacing-small: 0.5rem;
+  --spacing-medium: 1rem;
+  --spacing-large: 2rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
