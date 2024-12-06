@@ -27,3 +27,30 @@ body {
   min-height: 100dvh;
   background-color: var(--background-color);
 }
+
+i {
+  font-size: 1.5rem;
+  margin: 6px;
+}
+
+/* =================================== Header Section =================================== */
+
+header {
+  width: 100%;
+  min-height: 10dvh;
+  box-shadow: 0px 2px 4px #8a8a8a;
+  padding: 0 4%;
+}
+
+#theme-mode  {
+  font-size: var(--font-medium);
+  cursor: pointer;
+}
+
+/* =================================== Media Queries =================================== */
+
+@media (max-width: 600px) {
+  #theme-mode span {
+    display: none;
+  }
+}
