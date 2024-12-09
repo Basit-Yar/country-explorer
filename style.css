@@ -57,8 +57,8 @@ header {
   background-color: #fff;
   border-radius: 4px;
   padding: 2px 0;
-  min-width: 30%;
-  box-shadow: -2px 2px 2px rgb(0, 0, 0, 0.25);
+  min-width: 25%;
+  box-shadow: -2px 2px 4px rgb(0, 0, 0, 0.25);
 }
 
 #search-by-country input {
@@ -81,7 +81,7 @@ header {
   border-radius: 4px;
   background-color: #fff;
   cursor: pointer;
-  box-shadow: -2px 2px 2px rgb(0, 0, 0, 0.25);
+  box-shadow: -2px 2px 4px rgb(0, 0, 0, 0.25);
 }
 
 #filter-drop-down {
@@ -111,4 +111,12 @@ header {
   #theme-mode span {
     display: none;
   }
+
+  #finding-country-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5vh;
+    align-items:normal;
+  }
+  
 }
