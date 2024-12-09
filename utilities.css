@@ -23,6 +23,10 @@
   display: none;
 }
 
+.container {
+  padding: 0 4%;
+}
+
 /* ========================= Responsive Design ========================= */
 
 
