@@ -27,3 +27,96 @@ body {
   min-height: 100dvh;
   background-color: var(--background-color);
 }
+
+i {
+  font-size: 1.5rem;
+  margin: 6px;
+}
+
+/* =================================== Header =================================== */
+
+header {
+  width: 100%;
+  min-height: 10dvh;
+  box-shadow: 0px 2px 4px #8a8a8a;
+}
+
+#theme-mode  {
+  font-size: var(--font-normal);
+  cursor: pointer;
+}
+
+
+/* =================================== Section =================================== */
+
+#finding-country-section {
+  margin: 20px 0;
+}
+
+#search-by-country {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 2px 0;
+  min-width: 25%;
+  box-shadow: -2px 2px 4px rgb(0, 0, 0, 0.25);
+}
+
+#search-by-country input {
+  border: none;
+  width: 100%; 
+  font-size: var(--font-normal);
+  background: transparent; 
+  outline: none;
+}
+
+#filters {
+  position: relative;
+  min-width: 160px;
+}
+
+#filter-header {
+  padding:0 12px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+  box-shadow: -2px 2px 4px rgb(0, 0, 0, 0.25);
+}
+
+#filter-drop-down {
+  list-style: none; 
+  padding: 10px 12px; 
+  background-color: #fff; 
+  margin-top: 6px; 
+  border-radius: 4px; 
+  position: absolute; 
+  width: 100%;
+  display: none;
+}
+
+#filter-drop-down li {
+  padding: 4px;
+}
+
+#filter-drop-down li:hover {
+  background-color: #dadada;
+  cursor: pointer;
+}
+
+
+/* =================================== Media Queries =================================== */
+
+@media (max-width: 600px) {
+  #theme-mode span {
+    display: none;
+  }
+
+  #finding-country-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5vh;
+    align-items:normal;
+  }
+  
+}

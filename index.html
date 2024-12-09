@@ -7,13 +7,46 @@
     <title>Global Insights: Country Explorer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="utilities.css">
+    <!-- ==================== BOXICONS_CDN for font icons ====================== -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" crossorigin="anonymous" /> -->
 </head>
 
 <body>
 
-    <div>
-        <h1>Country Explorer</h1>
-    </div>
+    <header class="flex-between container">
+        <div id="logo-title">
+            <h3>Global Insights: Country Explorer</h3>
+        </div>
+        <div id="theme-mode" class="flex-center">
+            <i class="bx bx-moon"></i>
+            <span>Dark Mode</span>
+        </div>
+    </header>
+
+    <section id="finding-country-section" class="container flex-between">
+
+        <div id="search-by-country" class="flex">
+            <i class="bx bx-search-alt-2"></i>
+            <input type="search" placeholder="search for a country...">
+        </div>
+
+        <div id="filters">
+            <div id="filter-header" class="flex-center">
+                <span>Filter by Region</span>
+                <i class="bx bx-chevron-down"></i>
+            </div>
+            <div id="filter-drop-down">
+                <li>All</li>
+                <li>Africa</li>
+                <li>America</li>
+                <li>Asia</li>
+                <li>Europe</li>
+                <li>Oceania</li>
+            </div>
+        </div>
+
+    </section>
 
 </body>
 
