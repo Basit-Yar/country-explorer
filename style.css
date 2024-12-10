@@ -105,6 +105,38 @@ header {
 }
 
 
+/* =================================== Main (Country-listing) =================================== */
+
+#country-listing {
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+  gap:5vh;
+}
+
+.country-card {
+  border: 2px solid black;
+}
+
+.country-card img {
+  width: 100%;
+}
+
+.country-info {
+  padding: 2.5vh 1vw;
+}
+
+.country-title {
+  margin-bottom:2vh;
+}
+
+.country-info ul {
+  list-style: none;
+}
+
+.country-info ul li {
+  margin-bottom: 1vh;
+}
+
 /* =================================== Media Queries =================================== */
 
 @media (max-width: 600px) {
