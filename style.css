@@ -92,7 +92,6 @@ header {
   border-radius: 4px; 
   position: absolute; 
   width: 100%;
-  display: none;
 }
 
 #filter-drop-down li {
