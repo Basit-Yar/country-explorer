@@ -2,8 +2,13 @@ const filterHeader = document.querySelector("#filter-header");
 const filterDropDown = document.querySelector("#filter-drop-down");
 const filterHeaderIcon = document.querySelector("#filter-header i");
 const countryListing = document.querySelector("#country-listing");
+let filterHeaderText = document.querySelector("#filter-header span");
 
-
+filterDropDown.addEventListener("click", event => {
+    filterHeaderText.textContent = event.target.textContent;
+    filterDropDown.classList.toggle("display-none");
+    filterHeaderIcon.classList.toggle("bx-chevron-up");
+})
 
 filterHeader.addEventListener("click", () => {
     filterDropDown.classList.toggle("display-none");
@@ -30,7 +35,7 @@ async function fetchCountriesDataWithSpecifiedFields() {
     try {
         const response = await fetch(baseUrl + specifiedFields);
         const countriesData = await response.json();
-        console.log(countriesData)
+        // console.log(countriesData)
         return countriesData;
     } catch (error) {
         console.log(`Error: ${error}`);
