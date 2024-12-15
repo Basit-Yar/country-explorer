@@ -115,7 +115,7 @@ header {
 }
 
 .country-card {
-  box-shadow: 3px 3px 4px rgb(0, 0, 0, 0.5);
+  box-shadow: 3px 3px 4px rgb(0, 0, 0, 0.4);
   cursor: pointer;
   border-radius: 6px;
   overflow: hidden;
@@ -138,10 +138,12 @@ header {
 
 .country-title {
   margin-bottom:2vh;
+  font-size: 24px;
 }
 
 .country-info ul {
   list-style: none;
+  font-size: var(--font-large);
 }
 
 .country-info ul li {
