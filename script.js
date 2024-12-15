@@ -46,9 +46,9 @@ fetchCountriesDataWithSpecifiedFields().then(data => {
                             <div class="country-info">
                                 <h3 class="country-title">${country.name}</h3>
                                 <ul>
-                                    <li>Population: ${country.population}</li>
-                                    <li>Capital: ${country.capital}</li>
-                                    <li>Region: ${country.region}</li>
+                                    <li><span class="text-bold">Population:</span> ${country.population}</li>
+                                    <li><span class="text-bold">Capital:</span> ${country.capital}</li>
+                                    <li><span class="text-bold">Region:</span> ${country.region}</li>
                                 </ul>
                             </div>
                         </div>`
