@@ -111,14 +111,25 @@ header {
   display: grid; 
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
   gap:5vh;
+  margin-bottom: 4vh;
 }
 
 .country-card {
-  border: 2px solid black;
+  box-shadow: 3px 3px 4px rgb(0, 0, 0, 0.4);
+  cursor: pointer;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.country-card:hover {
+  box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.25);
+  transform: scale(.95);
+  transition: .5s
 }
 
 .country-card img {
   width: 100%;
+  height: 200px;
 }
 
 .country-info {
@@ -126,15 +137,17 @@ header {
 }
 
 .country-title {
-  margin-bottom:2vh;
+  margin-bottom:2.5vh;
+  font-size: 24px;
 }
 
 .country-info ul {
   list-style: none;
+  font-size: 18px;
 }
 
 .country-info ul li {
-  margin-bottom: 1vh;
+  margin-bottom: 1.5vh;
 }
 
 /* =================================== Media Queries =================================== */
@@ -149,6 +162,10 @@ header {
     flex-direction: column;
     gap: 2.5vh;
     align-items:normal;
+  }
+
+  .country-info {
+    padding: 2.5vh 5vw;
   }
   
 }
